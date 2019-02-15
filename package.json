@@ -20,7 +20,7 @@
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "fs-extra": "^7.0.1",
-    "handlebars": "^4.0.12",
+    "handlebars": "^4.0.13",
     "hashids": "^1.2.2",
     "jsonwebtoken": "^8.4.0",
     "knex": "^0.15.2",
