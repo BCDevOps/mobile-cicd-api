@@ -34,7 +34,8 @@
     "request": "^2.88.0",
     "request-promise-native": "^1.0.7",
     "rsa-pem-from-mod-exp": "^0.8.4",
-    "shortid": "^2.2.14"
+    "shortid": "^2.2.14",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -78,7 +79,9 @@
     "test:schema": "swagger-cli validate doc/api.yaml",
     "test:watch": "NODE_ENV=development jest __tests__ --watch",
     "test:lint": "eslint --env node --ext .js src",
-    "prune": "node build/scripts/prune.js"
+    "prune": "node build/scripts/prune.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "jest": {
     "verbose": false,
@@ -106,5 +109,6 @@
   },
   "author": "Jason C. Leach <jason.leach@fullboar.ca>",
   "license": "Apache-2.0",
-  "homepage": "https://github.com:bcgov/code-sign-api#readme"
+  "homepage": "https://github.com:bcgov/code-sign-api#readme",
+  "snyk": true
 }
